@@ -34,4 +34,36 @@ footer{
   text-align: center;
   padding: 10px;
 }
+
+@media(min-width: 768px){
+  main{
+    display:grid;
+    grid-template-columns:1fr 2fr 1fr;
+    gap: 10px;
+  }
+
+  sitebar-left{
+    background: #f4f4f4
+    padding: 10px  
+}
+
+  content{
+    background: white;
+  }
+
+  sidebar-right{
+    background: #f4f4f4;
+    padding: 10px;
+  }
+
+  nav{
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  nav a{
+    border: none;
+  }
+  }
+  
   
