@@ -5,8 +5,33 @@ body {
 }
 
 header{
-  baacground-color: brown;
+  baacground-color: teal;
   color:bink;
   padding: 15px
   text-align:center;
 }
+
+nav{
+  display: flex;
+  flex-direction: column;
+  backround: brown;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  paddind:10px;
+  border-bottom: 1px solid #ccc;
+}
+
+content{
+  padding: 15px;
+}
+
+footer{
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+  
