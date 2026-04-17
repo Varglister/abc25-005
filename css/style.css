@@ -12,12 +12,23 @@ body {
   color: #333;
 }
 
+#divcontent {
+  width: 70%;
+    border:1px solid green;
+  border-radius: 1px
+    background-color: white;
+  color:blue;
+  font-size:12px;
+  text-align: left;
+  box-sizing:border-box;
+  padding: 5px;
+
 /* Wrapper - Main container for entire page */
 .wrapper {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: rgba(255, 255, 255, 0.95);
+  background: white(255, 255, 255, 0.95);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -53,7 +64,7 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
-  color: #764ba2;
+  color: honeydew;
 }
 
 /* Container - Responsive wrapper for content */
