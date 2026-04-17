@@ -1,210 +1,31 @@
-/* ============================================
-   MOBILE FIRST DESIGN (Default)
-   ============================================ */
-
-* {
-  box-sizing: border-box;
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #e0f7fa;
-}
-
-header {
-  background-color: teal;
-  color: pink;
-  padding: 15px;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 24px;
-}
-
-/* Mobile Navigation - Vertical Stack */
-nav {
-  display: flex;
-  flex-direction: column;
-  background: brown;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 12px;
-  border-bottom: 1px solid #999;
-  transition: background-color 0.3s ease;
-}
-
-nav a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.sidebar-left {
-  display: none; /* Hidden on mobile */
-}
-
-.content {
-  padding: 15px;
-  background: white;
-  min-height: 400px;
-}
-
-.sidebar-right {
-  display: none; /* Hidden on mobile */
-}
-
-footer {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 20px;
-}
-
-/* ============================================
-   TABLET & DESKTOP DESIGN (768px and up)
-   ============================================ */
-
-@media (min-width: 768px) {
-  header h1 {
-    font-size: 32px;
-  }
-
-  /* Desktop Navigation - Horizontal */
-  nav {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  nav a {
-    border: none;
-    border-right: 1px solid #999;
-    padding: 15px 20px;
-  }
-
-  nav a:last-child {
-    border-right: none;
-  }
-
-  /* Three-Column Layout */
-  main {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 15px;
-    padding: 15px;
-  }
-
-  .sidebar-left {
-    display: block;
-    background: #f4f4f4;
-    padding: 15px;
-    border-radius: 5px;
-  }
-
-  .content {
-    background: white;
-    padding: 15px;
-    border-radius: 5px;
-  }
-
-  .sidebar-right {
-    display: block;
-    background: #f4f4f4;
-    padding: 15px;
-    border-radius: 5px;
-  }
-}
-
-/* ============================================
-   LARGE DESKTOP (1024px and up) - Optional
-   ============================================ */
-
-@media (min-width: 1024px) {
-  main {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-}
-
-  
-body {
-  font-family: Arial, sans-serif;
-  margin:0;
-  background-color: "cyan";
-}
-
-header{
-  background-color: teal;
-  color:pink;
-  padding: 15px;
-  text-align:center;
-}
-
-nav{
-  display: flex;
-  flex-direction: column;
-  background: brown;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  padding:10px;
-  border-bottom: 1px solid #ccc;
-}
-
-.content{
-  padding: 15px;
-}
-
-footer{
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
-
-@media(min-width: 768px){
-  main{
-    display:grid;
-    grid-template-columns:1fr 2fr 1fr;
-    gap: 10px;
-  }
-
-  .sitebar-left{
-    background: #f4f4f4;
-    padding: 10px;
-}
-
-  content{
-    background: white;
-  }
-
-  .sidebar-right{
-    background: #f4f4f4;
-    padding: 10px;
-  }
-
-  nav{
-    flex-direction: row;
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .mobile-fullscreen {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
     justify-content: center;
   }
+}
 
-  nav a{
-    border: none;
+/* Desktop Styles */
+@media (min-width: 769px) {
+  .desktop-sidebar {
+    display: flex;
   }
+
+  .sidebar-left, .sidebar-right {
+    width: 20%;
   }
-  
-  
+
+  .main-content {
+    width: 60%;
+  }
+}
