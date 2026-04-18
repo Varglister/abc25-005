@@ -1,4 +1,4 @@
-/*stylinf div main container*/
+/*styling div main container*/
 div#divmaincontainer{
   width:80%;
   maigin:0 auto;
@@ -6,4 +6,9 @@ div#divmaincontainer{
   padding:20px;
   border-radius:10px;
   text-align:center;
+}
+
+body{
+  margin:0;
+  padding:0;
 }
