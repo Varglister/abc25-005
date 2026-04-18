@@ -12,3 +12,12 @@ body{
   margin:0;
   padding:0;
 }
+
+header#siteheader{
+  width:100%;
+  height:150px;
+  background-image:linear-gradient(skyblue);
+  border:1px solid celadon;
+  border-radius:10px 10px 0 0;
+  padding:20px;
+}
