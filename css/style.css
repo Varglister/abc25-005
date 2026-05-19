@@ -1,11 +1,10 @@
-/*styling div main container*/
-div#divmaincontainer{
-  width:80%;
-  maigin:0 auto;
- /* border:4px solid turquoise;*/
-  padding:20px;
-  border-radius:10px;
-  text-align:center;
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding:20px 100px;
+  background: red;
 }
 
 header#siteheader{
