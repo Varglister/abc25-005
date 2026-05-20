@@ -1,175 +1,131 @@
-/*styling navigation bar*/
-.navbar-collapse{
-  left: 0;
-  width: 100%;
-  padding:20px 100px;
-  background: red;
-
-  .nav-link{
-    color: #ffffff !important;
-    display:inline-block;
-    transition: transform 0.2s ease; text-shadow 0.2s ease;
-    text-shadow:  0 0 0 transparent;
-  
+/* Color Palette Variables */
+:root {
+    --primary-color: #6C5CE7;    /* Vibrant Modern Purple */
+    --secondary-color: #00CEC9;  /* Bright Tech Teal */
+    --dark-bg: #2D3436;         /* Soft Dark Slate Blue */
+    --accent-pink: #A29BFE;     /* Neon Pastel Highlights */
+    --text-muted: #636E72;      /* Accessible Gray */
 }
 
-  /*hover effect*/
-  .nav-link:hover {
-    transform: translateY(-4px) scale(1.05);
-    text-shadow:0 4px 6px rgba(0, 0, 0, 0.3);
-                0 1px 3px rgba(0, 0, 0, 0.2);
-  }
-  
-header#siteheader{
-  width:100%;
-  height:150px;
-  background-image:linear-gradient(skyblue);
-  border:1px solid celadon;
-  border-radius:10px 10px 0 0;
-  padding:20px;
-}
-/* Base Styles & Typography */
-.bg-light {
+/* Base Adjustments */
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: #333333;
-    line-height: 1.6;
+    background-color: #F8F9FA;
+    color: #2D3436;
 }
 
-/* Header & Navigation */
-header {
-    background-color: #ffffff;
-    padding: 15px 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Custom Header & Footer */
+.main-header, .main-footer {
+    background: linear-gradient(135deg, var(--dark-bg), #1E272C) !important;
+    border-bottom: 3px solid var(--secondary-color);
+}
+.main-footer {
+    border-top: 3px solid var(--secondary-color);
+    border-bottom: none;
 }
 
-h1 {
-    font-size: 24px;
-    color: #1a1a1a;
-    margin: 0;
+/* Custom Colorful Navbar */
+.dynamic-nav {
+    background: linear-gradient(135deg, var(--primary-color), #4834D4) !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.dynamic-nav .nav-link:hover {
+    color: var(--secondary-color) !important;
 }
 
-/* Hero Section */
-.hero {
-    background: linear-gradient(135deg, #0066cc, #0052a3);
-    color: #ffffff;
-    text-align: center;
-    padding: 60px 20px;
+/* Vibrant Hero Section */
+.hero-section {
+    background: linear-gradient(45deg, rgba(108, 92, 231, 0.9), rgba(0, 206, 201, 0.8)), 
+                url('https://unsplash.com') no-image;
+    background-size: cover;
+    background-position: center;
+    min-height: 45vh;
+    padding: 60px 0;
 }
 
-.hero h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 16px;
-    margin-bottom: 25px;
-    opacity: 0.9;
-}
-
-.cta-button {
-    background-color: #ffffff;
-    color: #0066cc;
-    padding: 12px 30px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
+/* Dynamic Interactive Buttons */
+.btn-shop {
+    background-color: #FFFFFF;
+    color: var(--primary-color);
+    padding: 12px 35px;
+    border-radius: 50px;
     transition: all 0.3s ease;
-    display: inline-block;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
-
-.cta-button:hover {
-    background-color: #f0f0f0;
-    transform: translateY(-2px);
+.btn-shop:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    transform: translateY(-3px);
 }
-
-/* About Section */
-.about {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 0 20px;
-    text-align: center;
-}
-
-/* Product Section & Grid Layout */
-.products-section {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-.products-section h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    position: relative;
-}
-
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    padding: 20px 0;
-}
-
-/* Product Card Styling */
-.product-card {
-    background-color: #ffffff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
-}
-
-/* Image Handling (Fixes broken links style) */
-.product-card img {
-    width: 100%;
-    max-height: 200px;
-    object-fit: contain;
-    margin-bottom: 15px;
-    background-color: #f1f3f5;
+.btn-custom {
+    background-color: var(--primary-color);
+    color: white;
     border-radius: 8px;
+    padding: 10px 24px;
+    transition: opacity 0.2s ease;
+}
+.btn-custom:hover {
+    background-color: #4834D4;
+    color: white;
 }
 
-.product-card h3 {
-    font-size: 18px;
-    margin: 10px 0;
-    color: #2d3748;
+/* Section Titles */
+.section-title {
+    color: var(--dark-bg);
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 10px;
 }
 
-.price {
-    font-size: 20px;
-    font-weight: bold;
-    color: #0066cc;
-    margin: 10px 0;
+/* Card Visual Improvements */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1) !important;
+}
+.product-card img {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.product-card:hover img {
+    transform: scale(1.05);
+}
+.price-tag {
+    color: var(--primary-color);
+    font-size: 1.25rem;
 }
 
-/* Footer Section */
-footer {
-    background-color: #1a1a1a;
-    color: #ffffff;
-    text-align: center;
-    padding: 30px 20px;
-    margin-top: 60px;
-    font-size: 14px;
+/* Responsive Overrides via Media Queries */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 35vh;
+        padding: 40px 10px;
+    }
+    .hero-section h2 {
+        font-size: 2.2rem;
+    }
+  /* Custom Dropdown Styling */
+.custom-dropdown {
+    background-color: #FFFFFF;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-footer p {
-    margin: 5px 0;
-    opacity: 0.8;
+.custom-dropdown .dropdown-item {
+    color: var(--dark-bg);
+    font-weight: 500;
+    transition: all 0.2s ease;
 }
+
+.custom-dropdown .dropdown-item:hover {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+}
+
+}
+
+            
