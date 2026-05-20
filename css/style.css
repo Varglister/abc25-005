@@ -36,7 +36,7 @@ body {
 /* Vibrant Hero Section */
 .hero-section {
     background: linear-gradient(45deg, rgba(108, 92, 231, 0.9), rgba(0, 206, 201, 0.8)), 
-                url('https://unsplash.com') no-image;
+                url("images/cover.jpg.jpg") no-image;
     background-size: cover;
     background-position: center;
     min-height: 45vh;
