@@ -159,4 +159,16 @@ body {
 .accent-range::-moz-range-thumb {
     background: var(--secondary-color) !important;
 }
+/* Navigation  */
+nav ul, .nav-menu {
+    list-style: none !important;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* Adjust spacing between links */
+}
+
+nav li, .nav-item {
+    list-style-type: none !important;
+}
             
