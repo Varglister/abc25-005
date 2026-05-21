@@ -80,10 +80,6 @@ content:'';
     padding: 10px 24px;
     transition: opacity 0.2s ease;
 }
-.btn-custom:hover {
-    background-color: #4834D4;
-    color: white;
-}
 
 /* Section Titles */
 .section-title {
@@ -120,9 +116,11 @@ content:'';
         min-height: 35vh;
         padding: 40px 10px;
     }
+
     .hero-section h2 {
         font-size: 2.2rem;
     }
+}
   /* Custom Dropdown Styling */
 .custom-dropdown {
     background-color: #FFFFFF;
