@@ -141,6 +141,27 @@ content:'';
     background-color: var(--primary-color);
     color: #FFFFFF;
 }
+    /*AboutUs styling*/
+ body {
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 1.5.3 */
+
+  line-height: 1.8;
+
+  color: #333;
+
+}
+    
+h2 {
+
+  color: #007bff; /* Primary brand color */
+  letter-spacing: -1px;
+}
+
+
+p {
+  font-size: 1.1rem;
+}
 
 
 
